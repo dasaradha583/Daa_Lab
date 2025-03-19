@@ -1,3 +1,8 @@
+//
+// Created by Dasaradha on 19/03/25.
+//
+
+
 #include <stdio.h>
 
 double profit = 0;
@@ -67,6 +72,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d %d", &items[i].weight, &items[i].profits);
         items[i].ratio = (double) items[i].profits / items[i].weight;
+        printf("%f\n",items[i].ratio);
         items[i].number = i + 1;
         items[i].fraction = 0;
     }

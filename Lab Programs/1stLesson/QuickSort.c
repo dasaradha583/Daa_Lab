@@ -59,6 +59,8 @@ int main() {
         scanf("%d",&arr[i]);
     }
     quickSort(arr,0,n-1);
+    printf("After sorting the elements are : ");
+    printArray(arr,n);
     return 0;
 }
 

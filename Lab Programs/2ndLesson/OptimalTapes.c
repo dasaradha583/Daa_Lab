@@ -1,6 +1,5 @@
 
-
-#include<stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 struct tapes {
@@ -81,5 +80,5 @@ int main() {
         print(Tapes[i],i+1);
     }
     printf("Total mean time = %d\n" , totalSum);
-    printf("Orginal Mean time = %d", originalMeanTime);
+    printf("Original Mean time = %d", originalMeanTime);
 }

@@ -40,7 +40,7 @@ int main () {
         scanf("%d", &arr[i]);
     }
     minMax(0, n-1);
-    printf("Min : %d",min);
+    printf("Min : %d\n",min);
     printf("Max : %d",max);
 
     return 0;

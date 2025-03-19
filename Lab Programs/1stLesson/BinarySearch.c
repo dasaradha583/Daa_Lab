@@ -35,8 +35,9 @@ int main() {
     int x;
     printf("Enter element to serach : ");
     scanf("%d",&x);
-    if (binarySearch(arr, 0,5,x)) {
-        printf("Element is found");
+    int pos = binarySearch(arr, 0,5,x);
+    if (pos) {
+        printf("Element is found at %d index",pos);
     } else {
         printf("Element is not found");
     }

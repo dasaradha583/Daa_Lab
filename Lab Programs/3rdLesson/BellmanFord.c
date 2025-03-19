@@ -14,7 +14,7 @@ void bellmanFord(int a[][n], int source,int n) {
     for (int i = 0; i < n-1; i++) {
         for (int j = 0; j < n; j++) {
             for (int k = 0; k < n; k++) {
-                if (a[j][k] != 0) {
+                if (a[j][k] != 0 && distance[j] != INF) {
                     if (distance[k] > distance[j] + a[j][k]) {
                         distance[k] = distance[j] + a[j][k];
                     }
@@ -26,7 +26,7 @@ void bellmanFord(int a[][n], int source,int n) {
         for (int k = 0; k < n; k++) {
             if (a[j][k] != 0) {
                 if (distance[k] > distance[j] + a[j][k]) {
-                    distance[k] = distance[j] + a[j][k];
+                    // distance[k] = distance[j] + a[j][k];
                     printf("Negative cycle detected\n");
                     return;
                 }
