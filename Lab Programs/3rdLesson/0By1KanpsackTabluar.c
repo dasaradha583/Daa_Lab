@@ -15,6 +15,7 @@ int max (int t1,int  t2) {
     return t1 > t2 ? t1 : t2;
 }
 int main() {
+    int profit = 0;
 
     int maxWeight;
     int n;
@@ -50,6 +51,7 @@ int main() {
     for (int i = n; i >0 ; i--) {
         if (dp[i][maxWeight] != dp[i-1][maxWeight]) {
             objects[i-1] = 1;
+            profit += object[i-1].profit;
             maxWeight = maxWeight - object[i-1].weight;
         } else {
             objects[i-1] = 0;
@@ -63,6 +65,7 @@ int main() {
     for (int i = 0; i < n-1; i++) {
         printf("%d, ",objects[i]);
     }
-    printf("%d )",objects[n-1]);
+    printf("%d \n)",objects[n-1]);
+    printf("Total profit is : %d",profit);
 
 }

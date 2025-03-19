@@ -38,7 +38,7 @@ void bellmanFord(int a[][n], int source,int n) {
     }
 }
 int main() {
-    printf("Enter no of edges : ");
+    printf("Enter no of vertices : ");
     scanf("%d", &n);
     printf("Enter adjacency matrix : ");
     int a[n][n];
