@@ -28,6 +28,7 @@ int main() {
     for (int i = 0; i< n; i++) {
         scanf("%d %d", &object[i].weight,&object[i].profit);
     }
+    int weight  =maxWeight;
     int dp[n+1][maxWeight+1];
     for (int i = 0; i < 1; i++) {
         for (int j = 0; j <= maxWeight + 1; j++) {
@@ -56,6 +57,12 @@ int main() {
         } else {
             objects[i-1] = 0;
         }
+    }
+    for (int i = 0; i <= n; i++) {
+        for (int j = 0;j <= weight; j++) {
+            printf("%d ",dp[i][j]);
+        }
+        printf("\n");
     }
     printf("(");
     for (int i =0; i < n-1; i++) {

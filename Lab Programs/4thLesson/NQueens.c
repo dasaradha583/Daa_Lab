@@ -12,7 +12,7 @@ void print(int board[N+1][N+1]) {
     printf("Solution %d:\n", count);
     for (int i = 1; i <= N; i++) {
         for (int j = 1; j <= N; j++)
-            printf((board[i][j] == 1) ? "Q " : "_ ");
+            printf((board[i][j] == 1) ? "Q " : ". ");
         printf("\n");
     }
     printf("Solution vector is : [");

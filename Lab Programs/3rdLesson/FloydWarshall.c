@@ -6,6 +6,16 @@
 #include <stdio.h>
 #define INF 999
 
+
+void print(int a[100][100], int n) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            printf("%d ", a[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+}
 void FloydWarshall(int A[100][100], int n) {
     for (int k = 0; k < n; k++) {
         for (int i = 0; i < n; i++) {
@@ -15,6 +25,7 @@ void FloydWarshall(int A[100][100], int n) {
                 }
             }
         }
+        print(A,n);
     }
 }
 int main() {
